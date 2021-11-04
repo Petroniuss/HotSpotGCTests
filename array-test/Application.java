@@ -26,8 +26,7 @@ public class Application {
         }
     }
 
-    static void reallocateGeneration(Foo[] array, int generation) {
-        System.out.println(String.valueOf(generation) + ". " + "Reallocating Foo array. ");
+    static void allocate(Foo[] array, int generation) {
         for (var i = 0; i < LIMIT; i++) {
             if (i > 0) {
                 array[i] = new Foo(10 * generation + i, array[i - 1]);
@@ -37,12 +36,24 @@ public class Application {
         }
     }
 
+    static void reallocateGeneration(Foo[] array, int generation) {
+        System.out.println(String.valueOf(generation) + ". " + "Reallocating Foo array. ");
+        allocate(array, generation);
+    }
+
+    static void createGarbage(Foo[] array, int generation) {
+                System.out.println(String.valueOf(generation) + "Creating garbage. ");
+        for (int i = 0; i < 100000; i++) {
+            allocate(array, generation);
+        }
+    }
+
     public static void main(String[] args) {
         int genration = 0;
         final var array = new Foo[LIMIT];
         while(true) {
             if (genration % 3 == 0) {
-                reallocateGeneration(array, genration);
+                createGarbage(array, genration);
             }
 
             System.out.println(String.format("Generation: %d", genration));
