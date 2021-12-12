@@ -50,7 +50,6 @@ end
 begin
 	serial = parselogs("serial")
 	theta = parselogs("theta")
-	epsilon = parselogs("epsilon2")
 	data = vcat(theta, serial)
 end;
 
@@ -59,6 +58,9 @@ end;
 
 # ╔═╡ 4b37e76d-4cd7-42c1-aaeb-1f3188fba838
 @df data plot(:when, :to, xlabel="time", ylabel="memory usage", group=:gc)
+
+# ╔═╡ 4ca0b953-bd59-4520-b7c3-f30910f6a4bf
+@df data plot(:when, :from.-:to, xlabel="time", ylabel="memory usage", group=:gc)
 
 # ╔═╡ 2fcecbb2-7763-48a0-b624-a243448e0113
 @df data scatter(:when, :time, xlabel="time", ylabel="collection time", group=:gc)
@@ -1198,6 +1200,7 @@ version = "0.9.1+5"
 # ╠═c87d4ed0-3ad2-4305-8496-5cc37d75b149
 # ╠═e4b3db8f-7202-48d0-9fc0-71218a1867ba
 # ╠═4b37e76d-4cd7-42c1-aaeb-1f3188fba838
+# ╠═4ca0b953-bd59-4520-b7c3-f30910f6a4bf
 # ╠═2fcecbb2-7763-48a0-b624-a243448e0113
 # ╠═f7e76e65-5009-44b8-8371-9d077b732fb0
 # ╠═cc0382c5-7fa9-493e-ba0f-f4b41c8985cc
