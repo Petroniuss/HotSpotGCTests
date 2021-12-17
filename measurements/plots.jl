@@ -57,34 +57,103 @@ end;
 @df data plot(:when, :total, xlabel="time", ylabel="memory usage", group=:gc)
 
 # ╔═╡ 4b37e76d-4cd7-42c1-aaeb-1f3188fba838
-@df data plot(:when, :to, xlabel="time", ylabel="memory usage", group=:gc)
+@df data plot(:when./1000, :from, xlabel="czas działania programu [s]", ylabel="zużycie pamięci przed wywołaniem GC [MB]", group=:gc)
 
 # ╔═╡ 4ca0b953-bd59-4520-b7c3-f30910f6a4bf
-@df data plot(:when, :from.-:to, xlabel="time", ylabel="memory usage", group=:gc)
+@df data plot(:when./1000, :from.-:to, xlabel="czas działania programu [s]", ylabel="ilość odzyskanej pamięci [MB]", group=:gc) # markershape=:circle
+
+# ╔═╡ 666f4833-77b1-485e-8d0f-ce9c3d09a97e
+begin
+	@df theta plot(:when./1000, cumsum(:from.-:to), xlabel="czas działania programu [s]", ylabel="ilość odzyskanej pamięci [MB]", group=:gc)
+	@df serial plot!(:when./1000, cumsum(:from.-:to), xlabel="czas działania programu [s]", ylabel="ilość odzyskanej pamięci [MB]", group=:gc)
+end
+
+# ╔═╡ 815c2b29-05f0-4e74-8666-41d9ecc0a9d0
+@df data density(:from.-:to, group=:gc)
+
+# ╔═╡ 7fa0d403-435b-459d-9cfe-a37f97c67b0b
+begin
+	@df theta boxplot(:time, label="theta", ylabel="ilość zwolnionej pamięci [MB]", xaxis=nothing)
+	@df serial boxplot!(:time, label="serial")
+end
+
+# ╔═╡ 3fbe811c-1210-4821-bd59-2f082b999a08
+begin 
+	sy1, sf1 = groupby(serial, :what)
+	ty1, tf1 = groupby(theta, :what)
+	@df theta plot(label="theta", ylabel="ilość odzyskanej pamięci [MB]", xaxis=nothing, legend=:topleft)
+	@df ty1 boxplot!(:from.-:to, label="theta young")
+	@df sy1 boxplot!(:from.-:to, label="serial young")
+	@df tf1 boxplot!(:from.-:to, label="theta full")
+	@df sf1 boxplot!(:from.-:to, label="serial full")
+end
+
+# ╔═╡ 3a0606c5-1dc5-46f1-afc6-42278c110de6
+begin 
+	sy, sf = groupby(serial, :what)
+	ty, tf = groupby(theta, :what)
+	@df theta plot(label="theta", ylabel="czas kolekcji [ms]", xaxis=nothing, legend=:topleft)
+	@df ty boxplot!(:time, label="theta young")
+	@df sy boxplot!(:time, label="serial young")
+	@df tf boxplot!(:time, label="theta full")
+	@df sf boxplot!(:time, label="serial full")
+end
+
+# ╔═╡ 8578d23c-9d23-4445-8d78-961fadfdfaf8
+begin
+	plot(xlabel="ilość odzyskanej pamięci", ylabel="czas młodej kolekcji")
+	@df ty scatter!(:from.-:to,:time, label="theta young")
+	# young musi mieć jakieś 2 tryby w serialu jeden z nich pewnie rozszerza younga czy coś
+	@df sy scatter!(:from.-:to,:time, label="serial young")
+end
+
+# ╔═╡ cef2e7ec-f247-4afa-8b5d-0f143106f930
+filter(sy) do x x[:from] - x[:to] != 0 end
+
+# ╔═╡ 402aa525-fa6e-4d02-953a-bc80f11035ad
+begin
+	@df ty boxplot((:from .- :to)./256)
+end
+
+# ╔═╡ d6615ade-8987-45d1-9128-acadb7404264
+begin
+	@df tf boxplot((:from .- :to)./:total)
+	@df sf boxplot!((:from .- :to)./:total)
+end
+
+# ╔═╡ a70ae6d3-6965-4edf-a1fc-94915c930570
+@df data density(:when./1000, group=:gc)
 
 # ╔═╡ 2fcecbb2-7763-48a0-b624-a243448e0113
-@df data scatter(:when, :time, xlabel="time", ylabel="collection time", group=:gc)
+@df data plot(:when./1000, :time, xlabel="time", ylabel="collection time", group=:gc)
 
 # ╔═╡ f7e76e65-5009-44b8-8371-9d077b732fb0
 begin
-	@df theta boxplot(:time, label="theta", ylabel="collection time (latency)")
-	@df serial boxplot!(:time, label="serial", ylabel="collection time (latency)")
+	@df theta boxplot(:time, label="theta", ylabel="czas kolekcji [ms]", xaxis=nothing)
+	@df serial boxplot!(:time, label="serial")
 end
+
+# ╔═╡ cf6f5224-51d4-4bad-b794-bf74351ff185
+@df data density(:time, group=:gc, xlabel="czas kolekcji [ms]")
 
 # ╔═╡ cc0382c5-7fa9-493e-ba0f-f4b41c8985cc
 begin
-	@df theta plot(:when, cumsum(:time), label="theta", ylabel="cumulative gc time", xlabel="time")
-	@df serial plot!(:when, cumsum(:time), label="serial")
+	@df theta plot(:when./1000,cumsum(:time)./1000, label="theta", ylabel="sumaryczny czas kolekcji [s]", xlabel="czas działania programu [s]",legend=:bottomright)
+	@df serial plot!(:when./1000, cumsum(:time)./1000, label="serial")
 end
 
-# ╔═╡ 005d10d5-a3e7-40b9-9c29-e041ce26bafe
-(sy, sf) = groupby(serial, :what);
-
-# ╔═╡ 1221a087-0ba7-4621-9fa2-82bdd8b4b02e
+# ╔═╡ 4fa98303-0f5f-4447-b9b3-5691f7b9f138
 begin
-	@df theta boxplot(:time, label="theta", ylabel="collection time (latency)")
-	@df sy boxplot!(:time, label="serial", ylabel="collection time (latency)")
+	plot(xlabel="czas działania programu [s]", ylabel="procentowy udział gc w czasie", legend=:bottomright)
+	@df serial plot!(:when./1000, cumsum(:time)./:when, label="serial")
+	@df theta plot!(:when./1000, cumsum(:time)./:when, label="theta")
 end
+
+# ╔═╡ 3e006598-b63b-4459-a5d3-f0a25fdcbca1
+size(serial)
+
+# ╔═╡ 1db4d839-f131-44c6-bf2c-3fcdfb06d9b2
+size(theta)
 
 # ╔═╡ 00000000-0000-0000-0000-000000000001
 PLUTO_PROJECT_TOML_CONTENTS = """
@@ -1201,10 +1270,22 @@ version = "0.9.1+5"
 # ╠═e4b3db8f-7202-48d0-9fc0-71218a1867ba
 # ╠═4b37e76d-4cd7-42c1-aaeb-1f3188fba838
 # ╠═4ca0b953-bd59-4520-b7c3-f30910f6a4bf
+# ╠═666f4833-77b1-485e-8d0f-ce9c3d09a97e
+# ╠═815c2b29-05f0-4e74-8666-41d9ecc0a9d0
+# ╠═7fa0d403-435b-459d-9cfe-a37f97c67b0b
+# ╠═3fbe811c-1210-4821-bd59-2f082b999a08
+# ╠═3a0606c5-1dc5-46f1-afc6-42278c110de6
+# ╠═8578d23c-9d23-4445-8d78-961fadfdfaf8
+# ╠═cef2e7ec-f247-4afa-8b5d-0f143106f930
+# ╠═402aa525-fa6e-4d02-953a-bc80f11035ad
+# ╠═d6615ade-8987-45d1-9128-acadb7404264
+# ╠═a70ae6d3-6965-4edf-a1fc-94915c930570
 # ╠═2fcecbb2-7763-48a0-b624-a243448e0113
 # ╠═f7e76e65-5009-44b8-8371-9d077b732fb0
+# ╠═cf6f5224-51d4-4bad-b794-bf74351ff185
 # ╠═cc0382c5-7fa9-493e-ba0f-f4b41c8985cc
-# ╠═005d10d5-a3e7-40b9-9c29-e041ce26bafe
-# ╠═1221a087-0ba7-4621-9fa2-82bdd8b4b02e
+# ╠═4fa98303-0f5f-4447-b9b3-5691f7b9f138
+# ╠═3e006598-b63b-4459-a5d3-f0a25fdcbca1
+# ╠═1db4d839-f131-44c6-bf2c-3fcdfb06d9b2
 # ╟─00000000-0000-0000-0000-000000000001
 # ╟─00000000-0000-0000-0000-000000000002

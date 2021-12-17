@@ -1,197 +1,618 @@
-[0.020s][info][gc] Using Theta
-[0.020s][info][gc] Initializing ThetaHeap
-[0.020s][info][gc] Reserved young_space: 256.00 MiB [0x7071bb000 - 0x7171bb000], reserved old_space: 3726.27l MiB [0x7171bb000 - 0x800000000]
-[0.020s][info][gc] Committed young_space: 256.00 MiB, committed old_space: 0.00l MiB
-[0.020s][info][gc] Young [0x7071bb000 - 0x7171bb000]
-[0.020s][info][gc] Old [0x7171bb000 - 0x7171bb000]
-stretch tree of depth 21	 check: 4194303
-[3,719s][info][gc] GC(0) Remembered set size 0
-[3,719s][info][gc] GC(0) Step 0: Prologue 0,052ms
-[3,792s][info][gc] GC(0) Step 1: Move (v2) 73,187ms
-[3,792s][info][gc] GC(0) Step 3: Epilogue 0,001ms
-[3,792s][info][gc] GC(0) Young collect (unknown GCCause) 250M->61M(512M) 73,289ms
-[3,792s][info][gc] YoungCollection reclaimed: 189,78MiB [75,64% of Young], Old(0,00MiB->61,12MiB)
-[4,177s][info][gc] GC(1) Step 0: Prologue 0,014ms
-[4,249s][info][gc] GC(1) Step 1: Mark 71,830ms
-[4,385s][info][gc] GC(1) Step 2: Move 136,211ms
-[4,385s][info][gc] GC(1) Step 3: Epilogue 0,001ms
-[4,385s][info][gc] GC(1) Full collect (unknown GCCause) 312M->86M(499M) 208,237ms
-[4,385s][info][gc] FullCollection reclaimed: 225,20MiB, Young(250,88MiB->0,00MiB), Old(61,12MiB->86,80MiB)
-[4,789s][info][gc] GC(2) Remembered set size 55
-[4,789s][info][gc] GC(2) Step 0: Prologue 0,029ms
-[4,830s][info][gc] GC(2) Step 1: Move (v2) 41,124ms
-[4,830s][info][gc] GC(2) Step 3: Epilogue 0,001ms
-[4,830s][info][gc] GC(2) Young collect (unknown GCCause) 337M->124M(490M) 41,209ms
-[4,830s][info][gc] YoungCollection reclaimed: 213,65MiB [85,16% of Young], Old(86,80MiB->124,03MiB)
-[5,201s][info][gc] GC(3) Remembered set size 56
-[5,201s][info][gc] GC(3) Step 0: Prologue 0,044ms
-[5,261s][info][gc] GC(3) Step 1: Move (v2) 60,390ms
-[5,261s][info][gc] GC(3) Step 3: Epilogue 0,002ms
-[5,261s][info][gc] GC(3) Young collect (unknown GCCause) 374M->179M(483M) 60,492ms
-[5,261s][info][gc] YoungCollection reclaimed: 195,82MiB [78,05% of Young], Old(124,03MiB->179,10MiB)
-[5,674s][info][gc] GC(4) Remembered set size 37
-[5,674s][info][gc] GC(4) Step 0: Prologue 0,047ms
-[5,711s][info][gc] GC(4) Step 1: Move (v2) 37,571ms
-[5,711s][info][gc] GC(4) Step 3: Epilogue 0,001ms
-[5,711s][info][gc] GC(4) Young collect (unknown GCCause) 429M->213M(480M) 37,665ms
-[5,711s][info][gc] YoungCollection reclaimed: 216,31MiB [86,22% of Young], Old(179,10MiB->213,67MiB)
-[6,065s][info][gc] GC(5) Remembered set size 50
-[6,065s][info][gc] GC(5) Step 0: Prologue 0,029ms
-[6,130s][info][gc] GC(5) Step 1: Move (v2) 64,673ms
-[6,130s][info][gc] GC(5) Step 3: Epilogue 0,001ms
-[6,130s][info][gc] GC(5) Young collect (unknown GCCause) 464M->272M(735M) 64,751ms
-[6,130s][info][gc] YoungCollection reclaimed: 191,91MiB [76,50% of Young], Old(213,67MiB->272,64MiB)
-[6,490s][info][gc] GC(6) Step 0: Prologue 0,029ms
-[6,569s][info][gc] GC(6) Step 1: Mark 78,588ms
-[6,709s][info][gc] GC(6) Step 2: Move 140,287ms
-[6,709s][info][gc] GC(6) Step 3: Epilogue 0,001ms
-[6,710s][info][gc] GC(6) Full collect (unknown GCCause) 523M->95M(722M) 219,118ms
-[6,710s][info][gc] FullCollection reclaimed: 428,19MiB, Young(250,88MiB->0,00MiB), Old(272,64MiB->95,33MiB)
-[7,097s][info][gc] GC(7) Remembered set size 46
-[7,097s][info][gc] GC(7) Step 0: Prologue 0,045ms
-[7,131s][info][gc] GC(7) Step 1: Move (v2) 34,096ms
-[7,131s][info][gc] GC(7) Step 3: Epilogue 0,001ms
-[7,131s][info][gc] GC(7) Young collect (unknown GCCause) 346M->138M(699M) 34,175ms
-[7,131s][info][gc] YoungCollection reclaimed: 207,92MiB [82,88% of Young], Old(95,33MiB->138,29MiB)
-[7,499s][info][gc] GC(8) Remembered set size 51
-[7,499s][info][gc] GC(8) Step 0: Prologue 0,031ms
-[7,534s][info][gc] GC(8) Step 1: Move (v2) 34,400ms
-[7,534s][info][gc] GC(8) Step 3: Epilogue 0,001ms
-[7,534s][info][gc] GC(8) Young collect (unknown GCCause) 389M->182M(680M) 34,477ms
-[7,534s][info][gc] YoungCollection reclaimed: 207,03MiB [82,52% of Young], Old(138,29MiB->182,14MiB)
-[7,899s][info][gc] GC(9) Remembered set size 52
-[7,899s][info][gc] GC(9) Step 0: Prologue 0,054ms
-[7,949s][info][gc] GC(9) Step 1: Move (v2) 50,265ms
-[7,949s][info][gc] GC(9) Step 3: Epilogue 0,001ms
-[7,949s][info][gc] GC(9) Young collect (unknown GCCause) 433M->246M(665M) 50,363ms
-[7,949s][info][gc] YoungCollection reclaimed: 186,72MiB [74,43% of Young], Old(182,14MiB->246,29MiB)
-[8,330s][info][gc] GC(10) Remembered set size 34
-[8,330s][info][gc] GC(10) Step 0: Prologue 0,061ms
-[8,367s][info][gc] GC(10) Step 1: Move (v2) 36,855ms
-[8,367s][info][gc] GC(10) Step 3: Epilogue 0,001ms
-[8,367s][info][gc] GC(10) Young collect (unknown GCCause) 497M->286M(654M) 36,980ms
-[8,367s][info][gc] YoungCollection reclaimed: 210,19MiB [83,78% of Young], Old(246,29MiB->286,99MiB)
-[8,733s][info][gc] GC(11) Remembered set size 58
-[8,733s][info][gc] GC(11) Step 0: Prologue 0,047ms
-[8,781s][info][gc] GC(11) Step 1: Move (v2) 47,843ms
-[8,781s][info][gc] GC(11) Step 3: Epilogue 0,001ms
-[8,781s][info][gc] GC(11) Young collect (unknown GCCause) 537M->330M(647M) 47,945ms
-[8,781s][info][gc] YoungCollection reclaimed: 207,34MiB [82,65% of Young], Old(286,99MiB->330,52MiB)
-[9,150s][info][gc] GC(12) Remembered set size 45
-[9,150s][info][gc] GC(12) Step 0: Prologue 0,044ms
-[9,202s][info][gc] GC(12) Step 1: Move (v2) 51,618ms
-[9,202s][info][gc] GC(12) Step 3: Epilogue 0,001ms
-[9,202s][info][gc] GC(12) Young collect (unknown GCCause) 581M->378M(644M) 51,711ms
-[9,202s][info][gc] YoungCollection reclaimed: 202,57MiB [80,75% of Young], Old(330,52MiB->378,83MiB)
-[9,568s][info][gc] GC(13) Remembered set size 43
-[9,568s][info][gc] GC(13) Step 0: Prologue 0,061ms
-[9,612s][info][gc] GC(13) Step 1: Move (v2) 44,159ms
-[9,612s][info][gc] GC(13) Step 3: Epilogue 0,001ms
-[9,612s][info][gc] GC(13) Young collect (unknown GCCause) 629M->419M(899M) 44,271ms
-[9,612s][info][gc] YoungCollection reclaimed: 210,50MiB [83,90% of Young], Old(378,83MiB->419,21MiB)
-[9,977s][info][gc] GC(14) Step 0: Prologue 0,019ms
-[10,053s][info][gc] GC(14) Step 1: Mark 75,304ms
-[10,188s][info][gc] GC(14) Step 2: Move 135,484ms
-[10,188s][info][gc] GC(14) Step 3: Epilogue 0,001ms
-[10,188s][info][gc] GC(14) Full collect (unknown GCCause) 670M->89M(885M) 211,047ms
-[10,188s][info][gc] FullCollection reclaimed: 580,16MiB, Young(250,88MiB->0,00MiB), Old(419,21MiB->89,93MiB)
-[10,601s][info][gc] GC(15) Remembered set size 46
-[10,601s][info][gc] GC(15) Step 0: Prologue 0,047ms
-[10,629s][info][gc] GC(15) Step 1: Move (v2) 28,274ms
-[10,629s][info][gc] GC(15) Step 3: Epilogue 0,001ms
-[10,629s][info][gc] GC(15) Young collect (unknown GCCause) 340M->124M(851M) 28,357ms
-[10,629s][info][gc] YoungCollection reclaimed: 215,84MiB [86,03% of Young], Old(89,93MiB->124,98MiB)
-[10,990s][info][gc] GC(16) Remembered set size 54
-[10,990s][info][gc] GC(16) Step 0: Prologue 0,045ms
-[11,024s][info][gc] GC(16) Step 1: Move (v2) 33,752ms
-[11,024s][info][gc] GC(16) Step 3: Epilogue 0,001ms
-[11,024s][info][gc] GC(16) Young collect (unknown GCCause) 375M->167M(822M) 33,833ms
-[11,024s][info][gc] YoungCollection reclaimed: 208,54MiB [83,12% of Young], Old(124,98MiB->167,32MiB)
-[11,425s][info][gc] GC(17) Remembered set size 37
-[11,425s][info][gc] GC(17) Step 0: Prologue 0,024ms
-[11,452s][info][gc] GC(17) Step 1: Move (v2) 26,644ms
-[11,452s][info][gc] GC(17) Step 3: Epilogue 0,001ms
-[11,452s][info][gc] GC(17) Young collect (unknown GCCause) 418M->200M(797M) 26,702ms
-[11,452s][info][gc] YoungCollection reclaimed: 217,62MiB [86,74% of Young], Old(167,32MiB->200,57MiB)
-[11,807s][info][gc] GC(18) Remembered set size 44
-[11,807s][info][gc] GC(18) Step 0: Prologue 0,044ms
-[11,851s][info][gc] GC(18) Step 1: Move (v2) 43,769ms
-[11,851s][info][gc] GC(18) Step 3: Epilogue 0,001ms
-[11,851s][info][gc] GC(18) Young collect (unknown GCCause) 451M->254M(776M) 43,862ms
-[11,851s][info][gc] YoungCollection reclaimed: 196,69MiB [78,40% of Young], Old(200,57MiB->254,76MiB)
-[12,241s][info][gc] GC(19) Remembered set size 40
-[12,241s][info][gc] GC(19) Step 0: Prologue 0,058ms
-[12,270s][info][gc] GC(19) Step 1: Move (v2) 28,289ms
-[12,270s][info][gc] GC(19) Step 3: Epilogue 0,001ms
-[12,270s][info][gc] GC(19) Young collect (unknown GCCause) 505M->290M(759M) 28,384ms
-[12,270s][info][gc] YoungCollection reclaimed: 215,39MiB [85,85% of Young], Old(254,76MiB->290,25MiB)
-[12,623s][info][gc] GC(20) Remembered set size 27
-[12,623s][info][gc] GC(20) Step 0: Prologue 0,058ms
-[12,653s][info][gc] GC(20) Step 1: Move (v2) 30,358ms
-[12,653s][info][gc] GC(20) Step 3: Epilogue 0,001ms
-[12,653s][info][gc] GC(20) Young collect (unknown GCCause) 541M->327M(746M) 30,454ms
-[12,654s][info][gc] YoungCollection reclaimed: 213,39MiB [85,06% of Young], Old(290,25MiB->327,74MiB)
-[13,039s][info][gc] GC(21) Remembered set size 43
-[13,039s][info][gc] GC(21) Step 0: Prologue 0,031ms
-[13,072s][info][gc] GC(21) Step 1: Move (v2) 32,461ms
-[13,072s][info][gc] GC(21) Step 3: Epilogue 0,001ms
-[13,072s][info][gc] GC(21) Young collect (unknown GCCause) 578M->367M(736M) 32,537ms
-[13,072s][info][gc] YoungCollection reclaimed: 211,23MiB [84,20% of Young], Old(327,74MiB->367,39MiB)
-[13,440s][info][gc] GC(22) Remembered set size 35
-[13,440s][info][gc] GC(22) Step 0: Prologue 0,045ms
-[13,469s][info][gc] GC(22) Step 1: Move (v2) 29,448ms
-[13,469s][info][gc] GC(22) Step 3: Epilogue 0,001ms
-[13,469s][info][gc] GC(22) Young collect (unknown GCCause) 618M->403M(729M) 29,537ms
-[13,469s][info][gc] YoungCollection reclaimed: 214,73MiB [85,59% of Young], Old(367,39MiB->403,54MiB)
-[13,820s][info][gc] GC(23) Remembered set size 41
-[13,820s][info][gc] GC(23) Step 0: Prologue 0,031ms
-[13,858s][info][gc] GC(23) Step 1: Move (v2) 38,466ms
-[13,858s][info][gc] GC(23) Step 3: Epilogue 0,001ms
-[13,858s][info][gc] GC(23) Young collect (unknown GCCause) 654M->442M(724M) 38,554ms
-[13,858s][info][gc] YoungCollection reclaimed: 211,46MiB [84,29% of Young], Old(403,54MiB->442,96MiB)
-[14,233s][info][gc] GC(24) Remembered set size 44
-[14,233s][info][gc] GC(24) Step 0: Prologue 0,033ms
-[14,267s][info][gc] GC(24) Step 1: Move (v2) 33,592ms
-[14,267s][info][gc] GC(24) Step 3: Epilogue 0,001ms
-[14,267s][info][gc] GC(24) Young collect (unknown GCCause) 693M->473M(979M) 33,676ms
-[14,267s][info][gc] YoungCollection reclaimed: 220,02MiB [87,70% of Young], Old(442,96MiB->473,82MiB)
-[14,642s][info][gc] GC(25) Step 0: Prologue 0,013ms
-[14,725s][info][gc] GC(25) Step 1: Mark 83,484ms
-[14,887s][info][gc] GC(25) Step 2: Move 161,430ms
-[14,887s][info][gc] GC(25) Step 3: Epilogue 0,001ms
-[14,887s][info][gc] GC(25) Full collect (unknown GCCause) 724M->100M(963M) 245,217ms
-[14,887s][info][gc] FullCollection reclaimed: 623,73MiB, Young(250,88MiB->0,00MiB), Old(473,82MiB->100,97MiB)
-[15,289s][info][gc] GC(26) Remembered set size 46
-[15,289s][info][gc] GC(26) Step 0: Prologue 0,031ms
-[15,327s][info][gc] GC(26) Step 1: Move (v2) 37,509ms
-[15,327s][info][gc] GC(26) Step 3: Epilogue 0,001ms
-[15,327s][info][gc] GC(26) Young collect (unknown GCCause) 351M->148M(925M) 37,594ms
-[15,327s][info][gc] YoungCollection reclaimed: 203,76MiB [81,22% of Young], Old(100,97MiB->148,09MiB)
-[15,753s][info][gc] GC(27) Remembered set size 39
-[15,753s][info][gc] GC(27) Step 0: Prologue 0,030ms
-[15,802s][info][gc] GC(27) Step 1: Move (v2) 48,568ms
-[15,802s][info][gc] GC(27) Step 3: Epilogue 0,001ms
-[15,802s][info][gc] GC(27) Young collect (unknown GCCause) 398M->209M(892M) 48,636ms
-[15,802s][info][gc] YoungCollection reclaimed: 189,39MiB [75,49% of Young], Old(148,09MiB->209,59MiB)
-[16,260s][info][gc] GC(28) Remembered set size 45
-[16,260s][info][gc] GC(28) Step 0: Prologue 0,030ms
-[16,292s][info][gc] GC(28) Step 1: Move (v2) 32,736ms
-[16,292s][info][gc] GC(28) Step 3: Epilogue 0,001ms
-[16,292s][info][gc] GC(28) Young collect (unknown GCCause) 460M->249M(866M) 32,796ms
-[16,292s][info][gc] YoungCollection reclaimed: 210,49MiB [83,90% of Young], Old(209,59MiB->249,98MiB)
-[16,853s][info][gc] GC(29) Remembered set size 25
-[16,853s][info][gc] GC(29) Step 0: Prologue 0,033ms
-[16,868s][info][gc] GC(29) Step 1: Move (v2) 15,148ms
-[16,868s][info][gc] GC(29) Step 3: Epilogue 0,001ms
-[16,868s][info][gc] GC(29) Young collect (unknown GCCause) 500M->268M(843M) 15,216ms
-[16,868s][info][gc] YoungCollection reclaimed: 232,38MiB [92,63% of Young], Old(249,98MiB->268,48MiB)
-1048576	 trees of depth 4	 check: 32505856
-262144	 trees of depth 6	 check: 33292288
-65536	 trees of depth 8	 check: 33488896
-16384	 trees of depth 10	 check: 33538048
-4096	 trees of depth 12	 check: 33550336
-1024	 trees of depth 14	 check: 33553408
-256	 trees of depth 16	 check: 33554176
-64	 trees of depth 18	 check: 33554368
-16	 trees of depth 20	 check: 33554416
-long lived tree of depth 20	 check: 2097151
+[0.021s][info][gc] Using Theta
+[0.021s][info][gc] Initializing ThetaHeap
+[0.021s][info][gc] Reserved young_space: 350.00 MiB [0x7071bb000 - 0x71cfbb000], reserved old_space: 3632.27l MiB [0x71cfbb000 - 0x800000000]
+[0.021s][info][gc] Committed young_space: 350.00 MiB, committed old_space: 0.00l MiB
+[0.021s][info][gc] Young [0x7071bb000 - 0x71cfbb000]
+[0.021s][info][gc] Old [0x71cfbb000 - 0x71cfbb000]
+[4,956s][info][gc] GC(0) Remembered set size 0
+[4,956s][info][gc] GC(0) Step 0: Prologue 0,036ms
+[5,286s][info][gc] GC(0) Step 1: Move (v2) 329,203ms
+[5,286s][info][gc] GC(0) Step 3: Epilogue 0,001ms
+[5,286s][info][gc] GC(0) Young collect (unknown GCCause) 343M->288M(700M) 329,317ms
+[5,286s][info][gc] YoungCollection reclaimed: 54,54MiB [15,90% of Young], Old(0,00MiB->288,46MiB)
+stretch tree of depth 23	 check: 16777215
+[9,183s][info][gc] GC(1) Step 0: Prologue 0,010ms
+[9,354s][info][gc] GC(1) Step 1: Mark 170,708ms
+[9,698s][info][gc] GC(1) Step 2: Move 344,504ms
+[9,699s][info][gc] GC(1) Step 3: Epilogue 0,001ms
+[9,699s][info][gc] GC(1) Full collect (unknown GCCause) 638M->195M(696M) 515,569ms
+[9,699s][info][gc] FullCollection reclaimed: 442,33MiB, Young(349,69MiB->0,00MiB), Old(288,46MiB->195,82MiB)
+[10,149s][info][gc] GC(2) Remembered set size 46
+[10,149s][info][gc] GC(2) Step 0: Prologue 0,038ms
+[10,227s][info][gc] GC(2) Step 1: Move (v2) 77,850ms
+[10,227s][info][gc] GC(2) Step 3: Epilogue 0,001ms
+[10,227s][info][gc] GC(2) Young collect (unknown GCCause) 543M->287M(686M) 77,943ms
+[10,227s][info][gc] YoungCollection reclaimed: 256,70MiB [73,74% of Young], Old(195,82MiB->287,24MiB)
+[10,696s][info][gc] GC(3) Remembered set size 61
+[10,696s][info][gc] GC(3) Step 0: Prologue 0,071ms
+[10,788s][info][gc] GC(3) Step 1: Move (v2) 92,526ms
+[10,788s][info][gc] GC(3) Step 3: Epilogue 0,002ms
+[10,788s][info][gc] GC(3) Young collect (unknown GCCause) 635M->368M(1033M) 92,685ms
+[10,788s][info][gc] YoungCollection reclaimed: 266,86MiB [76,67% of Young], Old(287,24MiB->368,46MiB)
+[11,255s][info][gc] GC(4) Step 0: Prologue 0,052ms
+[11,554s][info][gc] GC(4) Step 1: Mark 299,070ms
+[12,126s][info][gc] GC(4) Step 2: Move 571,911ms
+[12,126s][info][gc] GC(4) Step 3: Epilogue 0,001ms
+[12,126s][info][gc] GC(4) Full collect (unknown GCCause) 716M->360M(1013M) 871,464ms
+[12,128s][info][gc] FullCollection reclaimed: 356,13MiB, Young(348,08MiB->0,00MiB), Old(368,46MiB->360,41MiB)
+[12,608s][info][gc] GC(5) Remembered set size 59
+[12,608s][info][gc] GC(5) Step 0: Prologue 0,038ms
+[12,685s][info][gc] GC(5) Step 1: Move (v2) 77,270ms
+[12,685s][info][gc] GC(5) Step 3: Epilogue 0,001ms
+[12,685s][info][gc] GC(5) Young collect (unknown GCCause) 708M->432M(994M) 77,360ms
+[12,685s][info][gc] YoungCollection reclaimed: 276,37MiB [79,40% of Young], Old(360,41MiB->432,11MiB)
+[13,171s][info][gc] GC(6) Remembered set size 58
+[13,171s][info][gc] GC(6) Step 0: Prologue 0,049ms
+[13,270s][info][gc] GC(6) Step 1: Move (v2) 98,991ms
+[13,270s][info][gc] GC(6) Step 3: Epilogue 0,001ms
+[13,270s][info][gc] GC(6) Young collect (unknown GCCause) 780M->519M(981M) 99,096ms
+[13,270s][info][gc] YoungCollection reclaimed: 260,39MiB [74,81% of Young], Old(432,11MiB->519,80MiB)
+[13,814s][info][gc] GC(7) Remembered set size 53
+[13,814s][info][gc] GC(7) Step 0: Prologue 0,036ms
+[13,885s][info][gc] GC(7) Step 1: Move (v2) 71,007ms
+[13,885s][info][gc] GC(7) Step 3: Epilogue 0,001ms
+[13,885s][info][gc] GC(7) Young collect (unknown GCCause) 867M->582M(974M) 71,100ms
+[13,885s][info][gc] YoungCollection reclaimed: 285,34MiB [81,98% of Young], Old(519,80MiB->582,54MiB)
+[14,392s][info][gc] GC(8) Remembered set size 42
+[14,392s][info][gc] GC(8) Step 0: Prologue 0,036ms
+[14,484s][info][gc] GC(8) Step 1: Move (v2) 92,268ms
+[14,484s][info][gc] GC(8) Step 3: Epilogue 0,001ms
+[14,484s][info][gc] GC(8) Young collect (unknown GCCause) 930M->663M(1322M) 92,359ms
+[14,484s][info][gc] YoungCollection reclaimed: 266,94MiB [76,69% of Young], Old(582,54MiB->663,67MiB)
+[14,951s][info][gc] GC(9) Step 0: Prologue 0,015ms
+[15,237s][info][gc] GC(9) Step 1: Mark 286,096ms
+[15,772s][info][gc] GC(9) Step 2: Move 535,375ms
+[15,772s][info][gc] GC(9) Step 3: Epilogue 0,001ms
+[15,772s][info][gc] GC(9) Full collect (unknown GCCause) 1011M->345M(1302M) 821,894ms
+[15,772s][info][gc] FullCollection reclaimed: 666,73MiB, Young(348,08MiB->0,00MiB), Old(663,67MiB->345,02MiB)
+[16,241s][info][gc] GC(10) Remembered set size 41
+[16,241s][info][gc] GC(10) Step 0: Prologue 0,038ms
+[16,334s][info][gc] GC(10) Step 1: Move (v2) 93,216ms
+[16,334s][info][gc] GC(10) Step 3: Epilogue 0,002ms
+[16,334s][info][gc] GC(10) Young collect (unknown GCCause) 693M->455M(1264M) 93,316ms
+[16,334s][info][gc] YoungCollection reclaimed: 237,97MiB [68,37% of Young], Old(345,02MiB->455,12MiB)
+[16,839s][info][gc] GC(11) Remembered set size 41
+[16,839s][info][gc] GC(11) Step 0: Prologue 0,040ms
+[16,901s][info][gc] GC(11) Step 1: Move (v2) 61,935ms
+[16,901s][info][gc] GC(11) Step 3: Epilogue 0,002ms
+[16,901s][info][gc] GC(11) Young collect (unknown GCCause) 803M->526M(1236M) 62,037ms
+[16,901s][info][gc] YoungCollection reclaimed: 276,55MiB [79,45% of Young], Old(455,12MiB->526,65MiB)
+[17,461s][info][gc] GC(12) Remembered set size 48
+[17,461s][info][gc] GC(12) Step 0: Prologue 0,036ms
+[17,514s][info][gc] GC(12) Step 1: Move (v2) 52,951ms
+[17,514s][info][gc] GC(12) Step 3: Epilogue 0,001ms
+[17,514s][info][gc] GC(12) Young collect (unknown GCCause) 874M->588M(1213M) 53,038ms
+[17,514s][info][gc] YoungCollection reclaimed: 286,42MiB [82,29% of Young], Old(526,65MiB->588,31MiB)
+[18,006s][info][gc] GC(13) Remembered set size 48
+[18,006s][info][gc] GC(13) Step 0: Prologue 0,036ms
+[18,087s][info][gc] GC(13) Step 1: Move (v2) 80,886ms
+[18,087s][info][gc] GC(13) Step 3: Epilogue 0,001ms
+[18,087s][info][gc] GC(13) Young collect (unknown GCCause) 936M->678M(1196M) 80,976ms
+[18,087s][info][gc] YoungCollection reclaimed: 258,37MiB [74,23% of Young], Old(588,31MiB->678,02MiB)
+[18,561s][info][gc] GC(14) Remembered set size 56
+[18,561s][info][gc] GC(14) Step 0: Prologue 0,082ms
+[18,639s][info][gc] GC(14) Step 1: Move (v2) 78,431ms
+[18,639s][info][gc] GC(14) Step 3: Epilogue 0,001ms
+[18,640s][info][gc] GC(14) Young collect (unknown GCCause) 1026M->746M(1185M) 78,571ms
+[18,640s][info][gc] YoungCollection reclaimed: 279,81MiB [80,39% of Young], Old(678,02MiB->746,29MiB)
+[19,107s][info][gc] GC(15) Remembered set size 57
+[19,107s][info][gc] GC(15) Step 0: Prologue 0,032ms
+[19,205s][info][gc] GC(15) Step 1: Move (v2) 97,851ms
+[19,205s][info][gc] GC(15) Step 3: Epilogue 0,001ms
+[19,205s][info][gc] GC(15) Young collect (unknown GCCause) 1094M->831M(1530M) 97,938ms
+[19,205s][info][gc] YoungCollection reclaimed: 262,66MiB [75,46% of Young], Old(746,29MiB->831,70MiB)
+[19,667s][info][gc] GC(16) Step 0: Prologue 0,015ms
+[19,978s][info][gc] GC(16) Step 1: Mark 311,057ms
+[20,563s][info][gc] GC(16) Step 2: Move 584,946ms
+[20,563s][info][gc] GC(16) Step 3: Epilogue 0,002ms
+[20,563s][info][gc] GC(16) Full collect (unknown GCCause) 1179M->373M(1508M) 896,523ms
+[20,563s][info][gc] FullCollection reclaimed: 806,25MiB, Young(348,08MiB->0,00MiB), Old(831,70MiB->373,53MiB)
+[21,033s][info][gc] GC(17) Remembered set size 45
+[21,033s][info][gc] GC(17) Step 0: Prologue 0,148ms
+[21,104s][info][gc] GC(17) Step 1: Move (v2) 70,285ms
+[21,104s][info][gc] GC(17) Step 3: Epilogue 0,002ms
+[21,104s][info][gc] GC(17) Young collect (unknown GCCause) 721M->455M(1459M) 70,510ms
+[21,104s][info][gc] YoungCollection reclaimed: 265,85MiB [76,38% of Young], Old(373,53MiB->455,76MiB)
+[21,616s][info][gc] GC(18) Remembered set size 63
+[21,616s][info][gc] GC(18) Step 0: Prologue 0,036ms
+[21,691s][info][gc] GC(18) Step 1: Move (v2) 74,952ms
+[21,691s][info][gc] GC(18) Step 3: Epilogue 0,001ms
+[21,691s][info][gc] GC(18) Young collect (unknown GCCause) 803M->543M(1418M) 75,045ms
+[21,691s][info][gc] YoungCollection reclaimed: 259,90MiB [74,67% of Young], Old(455,76MiB->543,94MiB)
+[22,213s][info][gc] GC(19) Remembered set size 50
+[22,213s][info][gc] GC(19) Step 0: Prologue 0,063ms
+[22,272s][info][gc] GC(19) Step 1: Move (v2) 59,589ms
+[22,272s][info][gc] GC(19) Step 3: Epilogue 0,002ms
+[22,272s][info][gc] GC(19) Young collect (unknown GCCause) 892M->609M(1385M) 59,712ms
+[22,272s][info][gc] YoungCollection reclaimed: 282,92MiB [81,28% of Young], Old(543,94MiB->609,09MiB)
+[22,736s][info][gc] GC(20) Remembered set size 50
+[22,736s][info][gc] GC(20) Step 0: Prologue 0,053ms
+[22,819s][info][gc] GC(20) Step 1: Move (v2) 82,988ms
+[22,819s][info][gc] GC(20) Step 3: Epilogue 0,001ms
+[22,819s][info][gc] GC(20) Young collect (unknown GCCause) 957M->707M(1359M) 83,121ms
+[22,819s][info][gc] YoungCollection reclaimed: 249,33MiB [71,63% of Young], Old(609,09MiB->707,84MiB)
+[23,287s][info][gc] GC(21) Remembered set size 33
+[23,287s][info][gc] GC(21) Step 0: Prologue 0,032ms
+[23,353s][info][gc] GC(21) Step 1: Move (v2) 65,758ms
+[23,353s][info][gc] GC(21) Step 3: Epilogue 0,001ms
+[23,353s][info][gc] GC(21) Young collect (unknown GCCause) 1055M->785M(1340M) 65,868ms
+[23,353s][info][gc] YoungCollection reclaimed: 270,24MiB [77,64% of Young], Old(707,84MiB->785,67MiB)
+[23,809s][info][gc] GC(22) Remembered set size 56
+[23,809s][info][gc] GC(22) Step 0: Prologue 0,037ms
+[23,896s][info][gc] GC(22) Step 1: Move (v2) 86,882ms
+[23,896s][info][gc] GC(22) Step 3: Epilogue 0,001ms
+[23,896s][info][gc] GC(22) Young collect (unknown GCCause) 1133M->874M(1327M) 86,976ms
+[23,896s][info][gc] YoungCollection reclaimed: 258,83MiB [74,36% of Young], Old(785,67MiB->874,92MiB)
+[24,376s][info][gc] GC(23) Remembered set size 38
+[24,376s][info][gc] GC(23) Step 0: Prologue 0,048ms
+[24,487s][info][gc] GC(23) Step 1: Move (v2) 110,991ms
+[24,487s][info][gc] GC(23) Step 3: Epilogue 0,001ms
+[24,487s][info][gc] GC(23) Young collect (unknown GCCause) 1222M->973M(1671M) 111,097ms
+[24,487s][info][gc] YoungCollection reclaimed: 249,01MiB [71,54% of Young], Old(874,92MiB->973,98MiB)
+[25,056s][info][gc] GC(24) Step 0: Prologue 0,016ms
+[25,243s][info][gc] GC(24) Step 1: Mark 187,377ms
+[25,585s][info][gc] GC(24) Step 2: Move 341,413ms
+[25,585s][info][gc] GC(24) Step 3: Epilogue 0,001ms
+[25,585s][info][gc] GC(24) Full collect (unknown GCCause) 1322M->223M(1649M) 529,171ms
+[25,585s][info][gc] FullCollection reclaimed: 1098,15MiB, Young(348,08MiB->0,00MiB), Old(973,98MiB->223,91MiB)
+[26,059s][info][gc] GC(25) Remembered set size 52
+[26,059s][info][gc] GC(25) Step 0: Prologue 0,038ms
+[26,128s][info][gc] GC(25) Step 1: Move (v2) 69,476ms
+[26,128s][info][gc] GC(25) Step 3: Epilogue 0,001ms
+[26,128s][info][gc] GC(25) Young collect (unknown GCCause) 571M->305M(1582M) 69,573ms
+[26,128s][info][gc] YoungCollection reclaimed: 266,17MiB [76,47% of Young], Old(223,91MiB->305,82MiB)
+[26,596s][info][gc] GC(26) Remembered set size 71
+[26,596s][info][gc] GC(26) Step 0: Prologue 0,035ms
+[26,675s][info][gc] GC(26) Step 1: Move (v2) 78,691ms
+[26,675s][info][gc] GC(26) Step 3: Epilogue 0,002ms
+[26,675s][info][gc] GC(26) Young collect (unknown GCCause) 653M->397M(1524M) 78,787ms
+[26,675s][info][gc] YoungCollection reclaimed: 256,64MiB [73,73% of Young], Old(305,82MiB->397,26MiB)
+[27,142s][info][gc] GC(27) Remembered set size 65
+[27,142s][info][gc] GC(27) Step 0: Prologue 0,048ms
+[27,220s][info][gc] GC(27) Step 1: Move (v2) 78,306ms
+[27,220s][info][gc] GC(27) Step 3: Epilogue 0,001ms
+[27,220s][info][gc] GC(27) Young collect (unknown GCCause) 745M->488M(1475M) 78,413ms
+[27,220s][info][gc] YoungCollection reclaimed: 256,42MiB [73,67% of Young], Old(397,26MiB->488,92MiB)
+[27,714s][info][gc] GC(28) Remembered set size 58
+[27,714s][info][gc] GC(28) Step 0: Prologue 0,037ms
+[27,789s][info][gc] GC(28) Step 1: Move (v2) 75,645ms
+[27,789s][info][gc] GC(28) Step 3: Epilogue 0,001ms
+[27,789s][info][gc] GC(28) Young collect (unknown GCCause) 836M->577M(1435M) 75,740ms
+[27,789s][info][gc] YoungCollection reclaimed: 259,26MiB [74,48% of Young], Old(488,92MiB->577,73MiB)
+[28,246s][info][gc] GC(29) Remembered set size 41
+[28,246s][info][gc] GC(29) Step 0: Prologue 0,066ms
+[28,317s][info][gc] GC(29) Step 1: Move (v2) 71,460ms
+[28,317s][info][gc] GC(29) Step 3: Epilogue 0,001ms
+[28,317s][info][gc] GC(29) Young collect (unknown GCCause) 925M->661M(1404M) 71,586ms
+[28,317s][info][gc] YoungCollection reclaimed: 263,86MiB [75,81% of Young], Old(577,73MiB->661,95MiB)
+[28,888s][info][gc] GC(30) Remembered set size 31
+[28,888s][info][gc] GC(30) Step 0: Prologue 0,045ms
+[28,924s][info][gc] GC(30) Step 1: Move (v2) 35,587ms
+[28,924s][info][gc] GC(30) Step 3: Epilogue 0,001ms
+[28,924s][info][gc] GC(30) Young collect (unknown GCCause) 1010M->704M(1379M) 35,679ms
+[28,924s][info][gc] YoungCollection reclaimed: 305,40MiB [87,74% of Young], Old(661,95MiB->704,63MiB)
+[29,404s][info][gc] GC(31) Remembered set size 56
+[29,404s][info][gc] GC(31) Step 0: Prologue 0,039ms
+[29,462s][info][gc] GC(31) Step 1: Move (v2) 58,692ms
+[29,462s][info][gc] GC(31) Step 3: Epilogue 0,001ms
+[29,462s][info][gc] GC(31) Young collect (unknown GCCause) 1052M->775M(1359M) 58,780ms
+[29,462s][info][gc] YoungCollection reclaimed: 277,36MiB [79,68% of Young], Old(704,63MiB->775,34MiB)
+[29,924s][info][gc] GC(32) Remembered set size 49
+[29,924s][info][gc] GC(32) Step 0: Prologue 0,070ms
+[30,009s][info][gc] GC(32) Step 1: Move (v2) 85,067ms
+[30,009s][info][gc] GC(32) Step 3: Epilogue 0,001ms
+[30,009s][info][gc] GC(32) Young collect (unknown GCCause) 1123M->876M(1344M) 85,212ms
+[30,009s][info][gc] YoungCollection reclaimed: 247,07MiB [70,98% of Young], Old(775,34MiB->876,35MiB)
+[30,476s][info][gc] GC(33) Remembered set size 51
+[30,476s][info][gc] GC(33) Step 0: Prologue 0,035ms
+[30,549s][info][gc] GC(33) Step 1: Move (v2) 72,291ms
+[30,549s][info][gc] GC(33) Step 3: Epilogue 0,001ms
+[30,549s][info][gc] GC(33) Young collect (unknown GCCause) 1224M->962M(1337M) 72,384ms
+[30,549s][info][gc] YoungCollection reclaimed: 261,75MiB [75,20% of Young], Old(876,35MiB->962,68MiB)
+[31,048s][info][gc] GC(34) Remembered set size 65
+[31,048s][info][gc] GC(34) Step 0: Prologue 0,063ms
+[31,147s][info][gc] GC(34) Step 1: Move (v2) 98,347ms
+[31,147s][info][gc] GC(34) Step 3: Epilogue 0,001ms
+[31,147s][info][gc] GC(34) Young collect (unknown GCCause) 1310M->1052M(1685M) 98,473ms
+[31,147s][info][gc] YoungCollection reclaimed: 258,45MiB [74,25% of Young], Old(962,68MiB->1052,30MiB)
+[31,599s][info][gc] GC(35) Step 0: Prologue 0,026ms
+[31,947s][info][gc] GC(35) Step 1: Mark 348,394ms
+[32,606s][info][gc] GC(35) Step 2: Move 658,594ms
+[32,606s][info][gc] GC(35) Step 3: Epilogue 0,001ms
+[32,606s][info][gc] GC(35) Full collect (unknown GCCause) 1400M->421M(1668M) 1007,470ms
+[32,606s][info][gc] FullCollection reclaimed: 978,49MiB, Young(348,08MiB->0,00MiB), Old(1052,30MiB->421,89MiB)
+[33,166s][info][gc] GC(36) Remembered set size 46
+[33,167s][info][gc] GC(36) Step 0: Prologue 0,055ms
+[33,205s][info][gc] GC(36) Step 1: Move (v2) 38,177ms
+[33,205s][info][gc] GC(36) Step 3: Epilogue 0,001ms
+[33,205s][info][gc] GC(36) Young collect (unknown GCCause) 769M->467M(1612M) 38,283ms
+[33,205s][info][gc] YoungCollection reclaimed: 302,29MiB [86,84% of Young], Old(421,89MiB->467,68MiB)
+[33,680s][info][gc] GC(37) Remembered set size 57
+[33,680s][info][gc] GC(37) Step 0: Prologue 0,036ms
+[33,752s][info][gc] GC(37) Step 1: Move (v2) 72,234ms
+[33,752s][info][gc] GC(37) Step 3: Epilogue 0,002ms
+[33,752s][info][gc] GC(37) Young collect (unknown GCCause) 815M->553M(1562M) 72,348ms
+[33,752s][info][gc] YoungCollection reclaimed: 262,04MiB [75,28% of Young], Old(467,68MiB->553,72MiB)
+[34,231s][info][gc] GC(38) Remembered set size 44
+[34,231s][info][gc] GC(38) Step 0: Prologue 0,052ms
+[34,288s][info][gc] GC(38) Step 1: Move (v2) 57,404ms
+[34,288s][info][gc] GC(38) Step 3: Epilogue 0,001ms
+[34,288s][info][gc] GC(38) Young collect (unknown GCCause) 901M->621M(1521M) 57,518ms
+[34,288s][info][gc] YoungCollection reclaimed: 280,40MiB [80,56% of Young], Old(553,72MiB->621,40MiB)
+[34,750s][info][gc] GC(39) Remembered set size 58
+[34,750s][info][gc] GC(39) Step 0: Prologue 0,037ms
+[34,831s][info][gc] GC(39) Step 1: Move (v2) 80,922ms
+[34,831s][info][gc] GC(39) Step 3: Epilogue 0,001ms
+[34,831s][info][gc] GC(39) Young collect (unknown GCCause) 969M->716M(1486M) 81,020ms
+[34,831s][info][gc] YoungCollection reclaimed: 252,62MiB [72,58% of Young], Old(621,40MiB->716,86MiB)
+[35,282s][info][gc] GC(40) Remembered set size 57
+[35,282s][info][gc] GC(40) Step 0: Prologue 0,040ms
+[35,360s][info][gc] GC(40) Step 1: Move (v2) 77,731ms
+[35,360s][info][gc] GC(40) Step 3: Epilogue 0,003ms
+[35,360s][info][gc] GC(40) Young collect (unknown GCCause) 1064M->808M(1460M) 77,862ms
+[35,360s][info][gc] YoungCollection reclaimed: 256,37MiB [73,65% of Young], Old(716,86MiB->808,57MiB)
+[35,828s][info][gc] GC(41) Remembered set size 56
+[35,828s][info][gc] GC(41) Step 0: Prologue 0,036ms
+[35,892s][info][gc] GC(41) Step 1: Move (v2) 64,510ms
+[35,892s][info][gc] GC(41) Step 3: Epilogue 0,001ms
+[35,892s][info][gc] GC(41) Young collect (unknown GCCause) 1156M->882M(1441M) 64,610ms
+[35,892s][info][gc] YoungCollection reclaimed: 273,81MiB [78,66% of Young], Old(808,57MiB->882,84MiB)
+[36,410s][info][gc] GC(42) Remembered set size 45
+[36,410s][info][gc] GC(42) Step 0: Prologue 0,033ms
+[36,462s][info][gc] GC(42) Step 1: Move (v2) 51,753ms
+[36,462s][info][gc] GC(42) Step 3: Epilogue 0,003ms
+[36,462s][info][gc] GC(42) Young collect (unknown GCCause) 1230M->939M(1428M) 51,862ms
+[36,462s][info][gc] YoungCollection reclaimed: 291,07MiB [83,62% of Young], Old(882,84MiB->939,85MiB)
+[36,985s][info][gc] GC(43) Remembered set size 39
+[36,985s][info][gc] GC(43) Step 0: Prologue 0,052ms
+[37,050s][info][gc] GC(43) Step 1: Move (v2) 64,926ms
+[37,050s][info][gc] GC(43) Step 3: Epilogue 0,016ms
+[37,050s][info][gc] GC(43) Young collect (unknown GCCause) 1287M->1015M(1420M) 65,059ms
+[37,050s][info][gc] YoungCollection reclaimed: 272,60MiB [78,32% of Young], Old(939,85MiB->1015,33MiB)
+[37,507s][info][gc] GC(44) Remembered set size 56
+[37,507s][info][gc] GC(44) Step 0: Prologue 0,050ms
+[37,586s][info][gc] GC(44) Step 1: Move (v2) 79,214ms
+[37,586s][info][gc] GC(44) Step 3: Epilogue 0,002ms
+[37,586s][info][gc] GC(44) Young collect (unknown GCCause) 1363M->1094M(1766M) 79,319ms
+[37,586s][info][gc] YoungCollection reclaimed: 269,29MiB [77,36% of Young], Old(1015,33MiB->1094,12MiB)
+[38,054s][info][gc] GC(45) Step 0: Prologue 0,015ms
+[38,344s][info][gc] GC(45) Step 1: Mark 289,966ms
+[38,887s][info][gc] GC(45) Step 2: Move 542,592ms
+[38,887s][info][gc] GC(45) Step 3: Epilogue 0,001ms
+[38,887s][info][gc] GC(45) Full collect (unknown GCCause) 1442M->348M(1746M) 832,943ms
+[38,887s][info][gc] FullCollection reclaimed: 1093,32MiB, Young(348,08MiB->0,00MiB), Old(1094,12MiB->348,88MiB)
+[39,354s][info][gc] GC(46) Remembered set size 51
+[39,354s][info][gc] GC(46) Step 0: Prologue 0,092ms
+[39,428s][info][gc] GC(46) Step 1: Move (v2) 73,993ms
+[39,428s][info][gc] GC(46) Step 3: Epilogue 0,001ms
+[39,428s][info][gc] GC(46) Young collect (unknown GCCause) 696M->430M(1680M) 74,148ms
+[39,428s][info][gc] YoungCollection reclaimed: 266,01MiB [76,42% of Young], Old(348,88MiB->430,95MiB)
+[39,912s][info][gc] GC(47) Remembered set size 44
+[39,912s][info][gc] GC(47) Step 0: Prologue 0,089ms
+[39,970s][info][gc] GC(47) Step 1: Move (v2) 57,273ms
+[39,970s][info][gc] GC(47) Step 3: Epilogue 0,001ms
+[39,970s][info][gc] GC(47) Young collect (unknown GCCause) 779M->498M(1624M) 57,430ms
+[39,970s][info][gc] YoungCollection reclaimed: 280,43MiB [80,57% of Young], Old(430,95MiB->498,59MiB)
+[40,530s][info][gc] GC(48) Remembered set size 65
+[40,530s][info][gc] GC(48) Step 0: Prologue 0,052ms
+[40,607s][info][gc] GC(48) Step 1: Move (v2) 77,102ms
+[40,607s][info][gc] GC(48) Step 3: Epilogue 0,002ms
+[40,607s][info][gc] GC(48) Young collect (unknown GCCause) 846M->589M(1576M) 77,218ms
+[40,607s][info][gc] YoungCollection reclaimed: 257,60MiB [74,01% of Young], Old(498,59MiB->589,07MiB)
+[41,133s][info][gc] GC(49) Remembered set size 49
+[41,133s][info][gc] GC(49) Step 0: Prologue 0,038ms
+[41,177s][info][gc] GC(49) Step 1: Move (v2) 44,040ms
+[41,177s][info][gc] GC(49) Step 3: Epilogue 0,001ms
+[41,177s][info][gc] GC(49) Young collect (unknown GCCause) 937M->641M(1536M) 44,131ms
+[41,177s][info][gc] YoungCollection reclaimed: 296,00MiB [85,04% of Young], Old(589,07MiB->641,15MiB)
+[41,657s][info][gc] GC(50) Remembered set size 61
+[41,657s][info][gc] GC(50) Step 0: Prologue 0,074ms
+[41,712s][info][gc] GC(50) Step 1: Move (v2) 55,173ms
+[41,712s][info][gc] GC(50) Step 3: Epilogue 0,002ms
+[41,712s][info][gc] GC(50) Young collect (unknown GCCause) 989M->706M(1502M) 55,314ms
+[41,712s][info][gc] YoungCollection reclaimed: 282,71MiB [81,22% of Young], Old(641,15MiB->706,52MiB)
+[42,174s][info][gc] GC(51) Remembered set size 52
+[42,174s][info][gc] GC(51) Step 0: Prologue 0,035ms
+[42,250s][info][gc] GC(51) Step 1: Move (v2) 75,775ms
+[42,250s][info][gc] GC(51) Step 3: Epilogue 0,001ms
+[42,250s][info][gc] GC(51) Young collect (unknown GCCause) 1054M->797M(1474M) 75,864ms
+[42,250s][info][gc] YoungCollection reclaimed: 257,29MiB [73,92% of Young], Old(706,52MiB->797,30MiB)
+[42,706s][info][gc] GC(52) Remembered set size 64
+[42,706s][info][gc] GC(52) Step 0: Prologue 0,050ms
+[42,780s][info][gc] GC(52) Step 1: Move (v2) 74,058ms
+[42,780s][info][gc] GC(52) Step 3: Epilogue 0,002ms
+[42,780s][info][gc] GC(52) Young collect (unknown GCCause) 1145M->885M(1453M) 74,167ms
+[42,780s][info][gc] YoungCollection reclaimed: 259,78MiB [74,63% of Young], Old(797,30MiB->885,60MiB)
+[43,236s][info][gc] GC(53) Remembered set size 61
+[43,236s][info][gc] GC(53) Step 0: Prologue 0,049ms
+[43,302s][info][gc] GC(53) Step 1: Move (v2) 65,995ms
+[43,302s][info][gc] GC(53) Step 3: Epilogue 0,001ms
+[43,302s][info][gc] GC(53) Young collect (unknown GCCause) 1233M->963M(1440M) 66,112ms
+[43,302s][info][gc] YoungCollection reclaimed: 270,37MiB [77,67% of Young], Old(885,60MiB->963,31MiB)
+[43,759s][info][gc] GC(54) Remembered set size 53
+[43,759s][info][gc] GC(54) Step 0: Prologue 0,036ms
+[43,842s][info][gc] GC(54) Step 1: Move (v2) 82,304ms
+[43,842s][info][gc] GC(54) Step 3: Epilogue 0,001ms
+[43,842s][info][gc] GC(54) Young collect (unknown GCCause) 1311M->1060M(1432M) 82,398ms
+[43,842s][info][gc] YoungCollection reclaimed: 250,50MiB [71,97% of Young], Old(963,31MiB->1060,89MiB)
+[44,357s][info][gc] GC(55) Remembered set size 35
+[44,357s][info][gc] GC(55) Step 0: Prologue 0,048ms
+[44,438s][info][gc] GC(55) Step 1: Move (v2) 81,403ms
+[44,439s][info][gc] GC(55) Step 3: Epilogue 0,001ms
+[44,439s][info][gc] GC(55) Young collect (unknown GCCause) 1408M->1137M(1781M) 81,532ms
+[44,439s][info][gc] YoungCollection reclaimed: 271,45MiB [77,98% of Young], Old(1060,89MiB->1137,52MiB)
+[44,977s][info][gc] GC(56) Step 0: Prologue 0,017ms
+[45,199s][info][gc] GC(56) Step 1: Mark 221,962ms
+[45,617s][info][gc] GC(56) Step 2: Move 417,489ms
+[45,617s][info][gc] GC(56) Step 3: Epilogue 0,001ms
+[45,617s][info][gc] GC(56) Full collect (unknown GCCause) 1485M->263M(1762M) 639,826ms
+[45,617s][info][gc] FullCollection reclaimed: 1222,08MiB, Young(348,08MiB->0,00MiB), Old(1137,52MiB->263,52MiB)
+[46,090s][info][gc] GC(57) Remembered set size 75
+[46,090s][info][gc] GC(57) Step 0: Prologue 0,088ms
+[46,167s][info][gc] GC(57) Step 1: Move (v2) 77,128ms
+[46,167s][info][gc] GC(57) Step 3: Epilogue 0,002ms
+[46,167s][info][gc] GC(57) Young collect (unknown GCCause) 611M->353M(1690M) 77,283ms
+[46,167s][info][gc] YoungCollection reclaimed: 258,12MiB [74,16% of Young], Old(263,52MiB->353,48MiB)
+[46,642s][info][gc] GC(58) Remembered set size 58
+[46,643s][info][gc] GC(58) Step 0: Prologue 0,038ms
+[46,709s][info][gc] GC(58) Step 1: Move (v2) 66,722ms
+[46,709s][info][gc] GC(58) Step 3: Epilogue 0,002ms
+[46,709s][info][gc] GC(58) Young collect (unknown GCCause) 701M->427M(1629M) 66,817ms
+[46,709s][info][gc] YoungCollection reclaimed: 274,47MiB [78,85% of Young], Old(353,48MiB->427,08MiB)
+[47,170s][info][gc] GC(59) Remembered set size 62
+[47,170s][info][gc] GC(59) Step 0: Prologue 0,038ms
+[47,258s][info][gc] GC(59) Step 1: Move (v2) 88,716ms
+[47,258s][info][gc] GC(59) Step 3: Epilogue 0,002ms
+[47,258s][info][gc] GC(59) Young collect (unknown GCCause) 775M->532M(1575M) 88,818ms
+[47,258s][info][gc] YoungCollection reclaimed: 242,90MiB [69,78% of Young], Old(427,08MiB->532,26MiB)
+[47,745s][info][gc] GC(60) Remembered set size 49
+[47,745s][info][gc] GC(60) Step 0: Prologue 0,039ms
+[47,806s][info][gc] GC(60) Step 1: Move (v2) 61,095ms
+[47,806s][info][gc] GC(60) Step 3: Epilogue 0,001ms
+[47,806s][info][gc] GC(60) Young collect (unknown GCCause) 880M->603M(1532M) 61,191ms
+[47,806s][info][gc] YoungCollection reclaimed: 277,30MiB [79,67% of Young], Old(532,26MiB->603,04MiB)
+[48,329s][info][gc] GC(61) Remembered set size 72
+[48,329s][info][gc] GC(61) Step 0: Prologue 0,035ms
+[48,396s][info][gc] GC(61) Step 1: Move (v2) 67,007ms
+[48,396s][info][gc] GC(61) Step 3: Epilogue 0,002ms
+[48,396s][info][gc] GC(61) Young collect (unknown GCCause) 951M->681M(1496M) 67,127ms
+[48,396s][info][gc] YoungCollection reclaimed: 269,34MiB [77,38% of Young], Old(603,04MiB->681,78MiB)
+[48,913s][info][gc] GC(62) Remembered set size 60
+[48,913s][info][gc] GC(62) Step 0: Prologue 0,048ms
+[48,964s][info][gc] GC(62) Step 1: Move (v2) 50,958ms
+[48,964s][info][gc] GC(62) Step 3: Epilogue 0,002ms
+[48,964s][info][gc] GC(62) Young collect (unknown GCCause) 1029M->740M(1467M) 51,088ms
+[48,964s][info][gc] YoungCollection reclaimed: 289,32MiB [83,12% of Young], Old(681,78MiB->740,53MiB)
+[49,429s][info][gc] GC(63) Remembered set size 56
+[49,429s][info][gc] GC(63) Step 0: Prologue 0,057ms
+[49,495s][info][gc] GC(63) Step 1: Move (v2) 65,225ms
+[49,495s][info][gc] GC(63) Step 3: Epilogue 0,002ms
+[49,495s][info][gc] GC(63) Young collect (unknown GCCause) 1088M->816M(1443M) 65,344ms
+[49,495s][info][gc] YoungCollection reclaimed: 271,62MiB [78,03% of Young], Old(740,53MiB->816,99MiB)
+[49,955s][info][gc] GC(64) Remembered set size 57
+[49,955s][info][gc] GC(64) Step 0: Prologue 0,036ms
+[50,023s][info][gc] GC(64) Step 1: Move (v2) 67,129ms
+[50,023s][info][gc] GC(64) Step 3: Epilogue 0,002ms
+[50,023s][info][gc] GC(64) Young collect (unknown GCCause) 1165M->896M(1426M) 67,221ms
+[50,023s][info][gc] YoungCollection reclaimed: 268,86MiB [77,24% of Young], Old(816,99MiB->896,20MiB)
+[50,479s][info][gc] GC(65) Remembered set size 52
+[50,479s][info][gc] GC(65) Step 0: Prologue 0,036ms
+[50,552s][info][gc] GC(65) Step 1: Move (v2) 73,410ms
+[50,552s][info][gc] GC(65) Step 3: Epilogue 0,001ms
+[50,552s][info][gc] GC(65) Young collect (unknown GCCause) 1244M->983M(1415M) 73,503ms
+[50,552s][info][gc] YoungCollection reclaimed: 261,04MiB [74,99% of Young], Old(896,20MiB->983,24MiB)
+[51,017s][info][gc] GC(66) Remembered set size 65
+[51,017s][info][gc] GC(66) Step 0: Prologue 0,048ms
+[51,080s][info][gc] GC(66) Step 1: Move (v2) 63,092ms
+[51,080s][info][gc] GC(66) Step 3: Epilogue 0,001ms
+[51,080s][info][gc] GC(66) Young collect (unknown GCCause) 1331M->1058M(1410M) 63,197ms
+[51,080s][info][gc] YoungCollection reclaimed: 273,22MiB [78,50% of Young], Old(983,24MiB->1058,10MiB)
+[51,533s][info][gc] GC(67) Remembered set size 62
+[51,533s][info][gc] GC(67) Step 0: Prologue 0,038ms
+[51,634s][info][gc] GC(67) Step 1: Move (v2) 100,946ms
+[51,634s][info][gc] GC(67) Step 3: Epilogue 0,002ms
+[51,634s][info][gc] GC(67) Young collect (unknown GCCause) 1406M->1137M(1759M) 101,040ms
+[51,634s][info][gc] YoungCollection reclaimed: 268,81MiB [77,23% of Young], Old(1058,10MiB->1137,36MiB)
+[52,203s][info][gc] GC(68) Step 0: Prologue 0,023ms
+[52,546s][info][gc] GC(68) Step 1: Mark 343,084ms
+[53,256s][info][gc] GC(68) Step 2: Move 710,292ms
+[53,256s][info][gc] GC(68) Step 3: Epilogue 0,002ms
+[53,257s][info][gc] GC(68) Full collect (unknown GCCause) 1485M->414M(1742M) 1054,018ms
+[53,257s][info][gc] FullCollection reclaimed: 1070,76MiB, Young(348,08MiB->0,00MiB), Old(1137,36MiB->414,68MiB)
+[53,257s][info][gc] GC(69) Step 0: Prologue 0,009ms
+[53,626s][info][gc] GC(69) Step 1: Mark 369,034ms
+[54,238s][info][gc] GC(69) Step 2: Move 612,327ms
+[54,238s][info][gc] GC(69) Step 3: Epilogue 0,001ms
+[54,239s][info][gc] GC(69) Full collect (unknown GCCause) 463M->414M(1681M) 981,753ms
+[54,239s][info][gc] FullCollection reclaimed: 48,72MiB, Young(48,73MiB->0,00MiB), Old(414,68MiB->414,69MiB)
+[54,750s][info][gc] GC(70) Remembered set size 47
+[54,750s][info][gc] GC(70) Step 0: Prologue 0,034ms
+[54,816s][info][gc] GC(70) Step 1: Move (v2) 65,665ms
+[54,816s][info][gc] GC(70) Step 3: Epilogue 0,001ms
+[54,816s][info][gc] GC(70) Young collect (unknown GCCause) 762M->492M(1624M) 65,758ms
+[54,816s][info][gc] YoungCollection reclaimed: 270,32MiB [77,66% of Young], Old(414,69MiB->492,45MiB)
+[55,268s][info][gc] GC(71) Remembered set size 45
+[55,268s][info][gc] GC(71) Step 0: Prologue 0,035ms
+[55,356s][info][gc] GC(71) Step 1: Move (v2) 87,293ms
+[55,356s][info][gc] GC(71) Step 3: Epilogue 0,002ms
+[55,356s][info][gc] GC(71) Young collect (unknown GCCause) 840M->591M(1575M) 87,393ms
+[55,356s][info][gc] YoungCollection reclaimed: 248,57MiB [71,41% of Young], Old(492,45MiB->591,96MiB)
+[55,817s][info][gc] GC(72) Remembered set size 47
+[55,817s][info][gc] GC(72) Step 0: Prologue 0,050ms
+[55,885s][info][gc] GC(72) Step 1: Move (v2) 68,117ms
+[55,885s][info][gc] GC(72) Step 3: Epilogue 0,001ms
+[55,885s][info][gc] GC(72) Young collect (unknown GCCause) 940M->672M(1535M) 68,222ms
+[55,885s][info][gc] YoungCollection reclaimed: 267,06MiB [76,73% of Young], Old(591,96MiB->672,97MiB)
+[56,346s][info][gc] GC(73) Remembered set size 62
+[56,346s][info][gc] GC(73) Step 0: Prologue 0,030ms
+[56,424s][info][gc] GC(73) Step 1: Move (v2) 78,386ms
+[56,424s][info][gc] GC(73) Step 3: Epilogue 0,001ms
+[56,424s][info][gc] GC(73) Young collect (unknown GCCause) 1021M->766M(1503M) 78,472ms
+[56,424s][info][gc] YoungCollection reclaimed: 254,62MiB [73,15% of Young], Old(672,97MiB->766,42MiB)
+[56,920s][info][gc] GC(74) Remembered set size 47
+[56,920s][info][gc] GC(74) Step 0: Prologue 0,051ms
+[56,979s][info][gc] GC(74) Step 1: Move (v2) 59,689ms
+[56,979s][info][gc] GC(74) Step 3: Epilogue 0,002ms
+[56,980s][info][gc] GC(74) Young collect (unknown GCCause) 1114M->832M(1479M) 59,825ms
+[56,980s][info][gc] YoungCollection reclaimed: 282,39MiB [81,13% of Young], Old(766,42MiB->832,11MiB)
+[57,550s][info][gc] GC(75) Remembered set size 54
+[57,550s][info][gc] GC(75) Step 0: Prologue 0,048ms
+[57,615s][info][gc] GC(75) Step 1: Move (v2) 64,188ms
+[57,615s][info][gc] GC(75) Step 3: Epilogue 0,001ms
+[57,615s][info][gc] GC(75) Young collect (unknown GCCause) 1180M->907M(1461M) 64,299ms
+[57,615s][info][gc] YoungCollection reclaimed: 273,03MiB [78,44% of Young], Old(832,11MiB->907,16MiB)
+[58,086s][info][gc] GC(76) Remembered set size 43
+[58,086s][info][gc] GC(76) Step 0: Prologue 0,038ms
+[58,152s][info][gc] GC(76) Step 1: Move (v2) 66,743ms
+[58,152s][info][gc] GC(76) Step 3: Epilogue 0,002ms
+[58,152s][info][gc] GC(76) Young collect (unknown GCCause) 1255M->984M(1448M) 66,850ms
+[58,152s][info][gc] YoungCollection reclaimed: 270,88MiB [77,82% of Young], Old(907,16MiB->984,35MiB)
+[58,611s][info][gc] GC(77) Remembered set size 47
+[58,611s][info][gc] GC(77) Step 0: Prologue 0,073ms
+[58,692s][info][gc] GC(77) Step 1: Move (v2) 80,691ms
+[58,692s][info][gc] GC(77) Step 3: Epilogue 0,001ms
+[58,692s][info][gc] GC(77) Young collect (unknown GCCause) 1332M->1077M(1441M) 80,839ms
+[58,692s][info][gc] YoungCollection reclaimed: 254,43MiB [73,10% of Young], Old(984,35MiB->1077,99MiB)
+[59,196s][info][gc] GC(78) Remembered set size 50
+[59,196s][info][gc] GC(78) Step 0: Prologue 0,051ms
+[59,278s][info][gc] GC(78) Step 1: Move (v2) 82,192ms
+[59,278s][info][gc] GC(78) Step 3: Epilogue 0,001ms
+[59,278s][info][gc] GC(78) Young collect (unknown GCCause) 1426M->1150M(1790M) 82,301ms
+[59,278s][info][gc] YoungCollection reclaimed: 275,42MiB [79,13% of Young], Old(1077,99MiB->1150,65MiB)
+[59,746s][info][gc] GC(79) Step 0: Prologue 0,017ms
+[60,077s][info][gc] GC(79) Step 1: Mark 331,464ms
+[60,710s][info][gc] GC(79) Step 2: Move 632,765ms
+[60,710s][info][gc] GC(79) Step 3: Epilogue 0,001ms
+[60,710s][info][gc] GC(79) Full collect (unknown GCCause) 1498M->400M(1772M) 964,672ms
+[60,710s][info][gc] FullCollection reclaimed: 1098,29MiB, Young(348,08MiB->0,00MiB), Old(1150,65MiB->400,44MiB)
+[61,167s][info][gc] GC(80) Remembered set size 54
+[61,167s][info][gc] GC(80) Step 0: Prologue 0,050ms
+[61,241s][info][gc] GC(80) Step 1: Move (v2) 74,004ms
+[61,241s][info][gc] GC(80) Step 3: Epilogue 0,002ms
+[61,241s][info][gc] GC(80) Young collect (unknown GCCause) 748M->488M(1708M) 74,129ms
+[61,241s][info][gc] YoungCollection reclaimed: 260,41MiB [74,81% of Young], Old(400,44MiB->488,11MiB)
+[61,768s][info][gc] GC(81) Remembered set size 46
+[61,768s][info][gc] GC(81) Step 0: Prologue 0,053ms
+[61,810s][info][gc] GC(81) Step 1: Move (v2) 42,447ms
+[61,810s][info][gc] GC(81) Step 3: Epilogue 0,002ms
+[61,810s][info][gc] GC(81) Young collect (unknown GCCause) 836M->536M(1654M) 42,578ms
+[61,810s][info][gc] YoungCollection reclaimed: 299,50MiB [86,04% of Young], Old(488,11MiB->536,69MiB)
+[62,317s][info][gc] GC(82) Remembered set size 52
+[62,317s][info][gc] GC(82) Step 0: Prologue 0,048ms
+[62,381s][info][gc] GC(82) Step 1: Move (v2) 63,883ms
+[62,381s][info][gc] GC(82) Step 3: Epilogue 0,002ms
+[62,381s][info][gc] GC(82) Young collect (unknown GCCause) 884M->611M(1606M) 63,997ms
+[62,381s][info][gc] YoungCollection reclaimed: 273,38MiB [78,54% of Young], Old(536,69MiB->611,39MiB)
+[62,885s][info][gc] GC(83) Remembered set size 48
+[62,885s][info][gc] GC(83) Step 0: Prologue 0,050ms
+[62,953s][info][gc] GC(83) Step 1: Move (v2) 68,082ms
+[62,953s][info][gc] GC(83) Step 3: Epilogue 0,001ms
+[62,953s][info][gc] GC(83) Young collect (unknown GCCause) 959M->690M(1565M) 68,187ms
+[62,953s][info][gc] YoungCollection reclaimed: 268,53MiB [77,15% of Young], Old(611,39MiB->690,94MiB)
+[63,459s][info][gc] GC(84) Remembered set size 59
+[63,459s][info][gc] GC(84) Step 0: Prologue 0,054ms
+[63,534s][info][gc] GC(84) Step 1: Move (v2) 74,742ms
+[63,534s][info][gc] GC(84) Step 3: Epilogue 0,001ms
+[63,534s][info][gc] GC(84) Young collect (unknown GCCause) 1039M->777M(1532M) 74,859ms
+[63,534s][info][gc] YoungCollection reclaimed: 261,20MiB [75,04% of Young], Old(690,94MiB->777,81MiB)
+[64,003s][info][gc] GC(85) Remembered set size 45
+[64,003s][info][gc] GC(85) Step 0: Prologue 0,036ms
+[64,081s][info][gc] GC(85) Step 1: Move (v2) 77,877ms
+[64,081s][info][gc] GC(85) Step 3: Epilogue 0,002ms
+[64,081s][info][gc] GC(85) Young collect (unknown GCCause) 1125M->868M(1507M) 77,977ms
+[64,081s][info][gc] YoungCollection reclaimed: 257,12MiB [73,87% of Young], Old(777,81MiB->868,77MiB)
+[64,588s][info][gc] GC(86) Remembered set size 44
+[64,588s][info][gc] GC(86) Step 0: Prologue 0,035ms
+[64,646s][info][gc] GC(86) Step 1: Move (v2) 57,985ms
+[64,646s][info][gc] GC(86) Step 3: Epilogue 0,002ms
+[64,646s][info][gc] GC(86) Young collect (unknown GCCause) 1216M->938M(1489M) 58,080ms
+[64,646s][info][gc] YoungCollection reclaimed: 277,96MiB [79,86% of Young], Old(868,77MiB->938,88MiB)
+[65,182s][info][gc] GC(87) Remembered set size 61
+[65,182s][info][gc] GC(87) Step 0: Prologue 0,077ms
+[65,233s][info][gc] GC(87) Step 1: Move (v2) 50,935ms
+[65,233s][info][gc] GC(87) Step 3: Epilogue 0,001ms
+[65,233s][info][gc] GC(87) Young collect (unknown GCCause) 1286M->998M(1477M) 51,078ms
+[65,233s][info][gc] YoungCollection reclaimed: 288,63MiB [82,92% of Young], Old(938,88MiB->998,33MiB)
+[65,765s][info][gc] GC(88) Remembered set size 40
+[65,765s][info][gc] GC(88) Step 0: Prologue 0,059ms
+[65,826s][info][gc] GC(88) Step 1: Move (v2) 61,497ms
+[65,826s][info][gc] GC(88) Step 3: Epilogue 0,001ms
+[65,826s][info][gc] GC(88) Young collect (unknown GCCause) 1346M->1071M(1469M) 61,623ms
+[65,826s][info][gc] YoungCollection reclaimed: 275,34MiB [79,10% of Young], Old(998,33MiB->1071,07MiB)
+[66,328s][info][gc] GC(89) Remembered set size 50
+[66,328s][info][gc] GC(89) Step 0: Prologue 0,041ms
+[66,396s][info][gc] GC(89) Step 1: Move (v2) 68,390ms
+[66,396s][info][gc] GC(89) Step 3: Epilogue 0,001ms
+[66,396s][info][gc] GC(89) Young collect (unknown GCCause) 1419M->1142M(1816M) 68,489ms
+[66,396s][info][gc] YoungCollection reclaimed: 276,32MiB [79,38% of Young], Old(1071,07MiB->1142,83MiB)
+[66,882s][info][gc] GC(90) Step 0: Prologue 0,018ms
+[67,166s][info][gc] GC(90) Step 1: Mark 284,115ms
+[67,695s][info][gc] GC(90) Step 2: Move 528,759ms
+[67,695s][info][gc] GC(90) Step 3: Epilogue 0,001ms
+[67,695s][info][gc] GC(90) Full collect (unknown GCCause) 1490M->338M(1795M) 813,286ms
+[67,695s][info][gc] FullCollection reclaimed: 1152,38MiB, Young(348,08MiB->0,00MiB), Old(1142,83MiB->338,52MiB)
+[68,169s][info][gc] GC(91) Remembered set size 59
+[68,169s][info][gc] GC(91) Step 0: Prologue 0,035ms
+[68,240s][info][gc] GC(91) Step 1: Move (v2) 71,294ms
+[68,240s][info][gc] GC(91) Step 3: Epilogue 0,001ms
+[68,240s][info][gc] GC(91) Young collect (unknown GCCause) 686M->422M(1726M) 71,383ms
+[68,240s][info][gc] YoungCollection reclaimed: 264,09MiB [75,87% of Young], Old(338,52MiB->422,51MiB)
+[68,701s][info][gc] GC(92) Remembered set size 55
+[68,702s][info][gc] GC(92) Step 0: Prologue 0,049ms
+[68,790s][info][gc] GC(92) Step 1: Move (v2) 88,153ms
+[68,790s][info][gc] GC(92) Step 3: Epilogue 0,001ms
+[68,790s][info][gc] GC(92) Young collect (unknown GCCause) 770M->517M(1666M) 88,264ms
+[68,790s][info][gc] YoungCollection reclaimed: 253,32MiB [72,78% of Young], Old(422,51MiB->517,27MiB)
+[69,309s][info][gc] GC(93) Remembered set size 52
+[69,309s][info][gc] GC(93) Step 0: Prologue 0,037ms
+[69,361s][info][gc] GC(93) Step 1: Move (v2) 51,838ms
+[69,361s][info][gc] GC(93) Step 3: Epilogue 0,001ms
+[69,361s][info][gc] GC(93) Young collect (unknown GCCause) 865M->574M(1616M) 51,938ms
+[69,361s][info][gc] YoungCollection reclaimed: 290,38MiB [83,42% of Young], Old(517,27MiB->574,97MiB)
+[69,875s][info][gc] GC(94) Remembered set size 47
+[69,875s][info][gc] GC(94) Step 0: Prologue 0,038ms
+[69,944s][info][gc] GC(94) Step 1: Move (v2) 68,506ms
+[69,944s][info][gc] GC(94) Step 3: Epilogue 0,001ms
+[69,944s][info][gc] GC(94) Young collect (unknown GCCause) 923M->655M(1573M) 68,600ms
+[69,944s][info][gc] YoungCollection reclaimed: 267,92MiB [76,97% of Young], Old(574,97MiB->655,12MiB)
+[70,404s][info][gc] GC(95) Remembered set size 52
+[70,404s][info][gc] GC(95) Step 0: Prologue 0,048ms
+[70,469s][info][gc] GC(95) Step 1: Move (v2) 65,105ms
+[70,469s][info][gc] GC(95) Step 3: Epilogue 0,001ms
+[70,469s][info][gc] GC(95) Young collect (unknown GCCause) 1003M->731M(1538M) 65,209ms
+[70,469s][info][gc] YoungCollection reclaimed: 271,38MiB [77,97% of Young], Old(655,12MiB->731,82MiB)
+[70,924s][info][gc] GC(96) Remembered set size 38
+[70,924s][info][gc] GC(96) Step 0: Prologue 0,036ms
+[70,991s][info][gc] GC(96) Step 1: Move (v2) 67,501ms
+[70,991s][info][gc] GC(96) Step 3: Epilogue 0,001ms
+[70,991s][info][gc] GC(96) Young collect (unknown GCCause) 1079M->811M(1509M) 67,596ms
+[70,991s][info][gc] YoungCollection reclaimed: 268,66MiB [77,18% of Young], Old(731,82MiB->811,24MiB)
+[71,507s][info][gc] GC(97) Remembered set size 115
+[71,507s][info][gc] GC(97) Step 0: Prologue 0,036ms
+[71,594s][info][gc] GC(97) Step 1: Move (v2) 87,326ms
+[71,595s][info][gc] GC(97) Step 3: Epilogue 0,001ms
+[71,595s][info][gc] GC(97) Young collect (unknown GCCause) 1159M->912M(1487M) 87,418ms
+[71,595s][info][gc] YoungCollection reclaimed: 246,69MiB [70,87% of Young], Old(811,24MiB->912,63MiB)
+[72,223s][info][gc] GC(98) Remembered set size 47
+[72,224s][info][gc] GC(98) Step 0: Prologue 0,049ms
+[72,298s][info][gc] GC(98) Step 1: Move (v2) 74,570ms
+[72,298s][info][gc] GC(98) Step 3: Epilogue 0,002ms
+[72,298s][info][gc] GC(98) Young collect (unknown GCCause) 1260M->1002M(1473M) 74,688ms
+[72,298s][info][gc] YoungCollection reclaimed: 258,60MiB [74,29% of Young], Old(912,63MiB->1002,11MiB)
+[73,393s][info][gc] GC(99) Remembered set size 41
+[73,393s][info][gc] GC(99) Step 0: Prologue 0,033ms
+[73,422s][info][gc] GC(99) Step 1: Move (v2) 28,305ms
+[73,422s][info][gc] GC(99) Step 3: Epilogue 0,002ms
+[73,422s][info][gc] GC(99) Young collect (unknown GCCause) 1350M->1035M(1466M) 28,394ms
+[73,422s][info][gc] YoungCollection reclaimed: 314,84MiB [90,45% of Young], Old(1002,11MiB->1035,35MiB)
+4194304	 trees of depth 4	 check: 130023424
+1048576	 trees of depth 6	 check: 133169152
+262144	 trees of depth 8	 check: 133955584
+65536	 trees of depth 10	 check: 134152192
+16384	 trees of depth 12	 check: 134201344
+4096	 trees of depth 14	 check: 134213632
+1024	 trees of depth 16	 check: 134216704
+256	 trees of depth 18	 check: 134217472
+64	 trees of depth 20	 check: 134217664
+16	 trees of depth 22	 check: 134217712
+long lived tree of depth 22	 check: 8388607
